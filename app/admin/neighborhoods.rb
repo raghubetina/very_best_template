@@ -1,7 +1,6 @@
-ActiveAdmin.register Dish do
+ActiveAdmin.register Neighborhood do
 
- permit_params :name, :cuisine_id
-
+ permit_params :name
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -14,6 +13,5 @@ ActiveAdmin.register Dish do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-
 
 end
