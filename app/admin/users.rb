@@ -1,7 +1,6 @@
-ActiveAdmin.register Neighborhood do
+ActiveAdmin.register User do
 
- permit_params :name
-
+ permit_params :email, :password, :username
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -14,6 +13,5 @@ ActiveAdmin.register Neighborhood do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-
 
 end
